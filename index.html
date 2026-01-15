@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jocic Equity Options Income Index</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Jocic Equity Options Income Index</h1>
+	
+	<div class="headline">
+  <div class="headline-main">
+    <span id="lastValue">–</span>
+    <span id="changeAbs" class="muted">–</span>
+    <span id="changePct" class="muted">–</span>
+  </div>
+  <div id="lastTimestamp" class="headline-sub muted">–</div>
+</div>
+
+
+    <div class="range">
+      <button class="btn" data-range="1D">1T</button>
+      <button class="btn" data-range="1W">1W</button>
+      <button class="btn" data-range="1M">1M</button>
+      <button class="btn" data-range="3M">3M</button>
+      <button class="btn" data-range="YTD">YTD</button>
+      <button class="btn" data-range="1Y">1J</button>
+      <button class="btn active" data-range="ALL">ALL</button>
+    </div>
+
+    <div id="chart" style="height:420px;"></div>
+
+   <p style="opacity:.7;margin-top:10px;">
+  Der "Jocic Equity Options Income Index" bildet die Wertentwicklung einer regelbasierten Investment- und Optionsstrategie ab.
+  Grundlage ist ein fiktives Startportfolio aus ausgewählten Aktienpositionen sowie einer Cash-Komponente.
+  Der Indexwert ergibt sich aus dem jeweils aktuellen Nettoinventarwert des Gesamtportfolios.
+	</p>
+
+	<p style="opacity:.7;">
+  In die Berechnung fließen neben den Aktienkursen auch vereinnahmte Optionsprämien sowie offene
+  Optionspositionen ein. Der Index wird intraday zu festen Zeitpunkten auf Basis der zuletzt
+  verfügbaren Marktdaten aktualisiert.
+	</p>
+
+	<p style="opacity:.7;">
+  Der "Jocic Equity Options Income Index" dient ausschließlich der transparenten Darstellung einer persönlichen
+  Anlagestrategie und stellt keine Anlageberatung, Empfehlung oder Aufforderung zum Kauf
+  oder Verkauf von Finanzinstrumenten dar.
+	</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
